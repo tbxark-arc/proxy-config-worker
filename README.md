@@ -18,7 +18,7 @@ mkdir your-worker-name
 cd your-worker-name
 wrangler init  your-worker-name --type webpack
 npm init
-npm install @tbxark/proxy-config-worker@1.0.2
+npm install @tbxark/proxy-config-worker@1.0.4
 
 ```
 
