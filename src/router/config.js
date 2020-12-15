@@ -3,7 +3,7 @@ import HookConfig from '../hook/config'
 
 class Config {
   static async handleRequestWithParams(params) {
-    let text = HookConfig.before(params)
+    let text = await HookConfig.before(params)
     if (!text) {
       const port = params.get('port')
       const token = params.get('token')
@@ -18,7 +18,7 @@ class Config {
         return new Response('style not found', { status: 400 })
       }
       text = ConfigFileRender.render(token, port, style)
-      text = HookConfig.after(token, port, style, text)
+      text = await HookConfig.after(token, port, style, text)
     }
     return new Response(text, { status: 200 })
   }

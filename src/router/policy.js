@@ -4,7 +4,7 @@ import HookPolicy from '../hook/policy'
 
 class Policy {
   static async handleRequestWithParams(params) {
-    let text = HookPolicy.before(params)
+    let text = await HookPolicy.before(params)
     if (!text) {
       const port = params.get('port')
       const token = params.get('token')
@@ -25,7 +25,7 @@ class Policy {
         configs.push(config)
       }
       text = StringifyFactory.renderPolicy(configs, style)
-      text = HookPolicy.after(token, port, style, text)
+      text = await HookPolicy.after(token, port, style, text)
     }
     return new Response(text, { status: 200 })
   }
