@@ -1,8 +1,8 @@
-import Policy from './router/policy'
-import Git from './router/git'
-import Config from './router/config'
-import HookSchedule from './hook/schedule'
-import home_page_html from './resource/homepage'
+import Policy from './src/router/policy'
+import Git from './src/router/git'
+import Config from './src/router/config'
+import HookSchedule from './src/hook/schedule'
+import home_page_html from './src/resource/homepage'
 
 class Application {
   static async handleSchedule(scheduledTime) {

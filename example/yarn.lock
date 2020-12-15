@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@tbxark/proxy-config-worker@1.0.2":
-  version "1.0.2"
-  resolved "https://npm.pkg.github.com/download/@tbxark/proxy-config-worker/1.0.2/c9bae3c01ae2eca5da3d52a81469ba90833a17adf7a6a82ead3acdaabda5351c#9cfcaacc20c550070f5f860376a1dbdf87ff2f0c"
-  integrity sha512-imnqCYJ6LsyYOyh1NHIreaPhfzeMhC6PUkbrm9hldLL7w5O/CXfPJ5teRvf1CTcRqK8BRC7SmmpNrhEu+WZ8Fg==
+"@tbxark/proxy-config-worker@1.0.4":
+  version "1.0.4"
+  resolved "https://npm.pkg.github.com/download/@tbxark/proxy-config-worker/1.0.4/d3547038bb64826d820e5aba3f1ccffa325d432857a519b5cbbdebd110fb0c07#12f00df83d1525ad9d05bba10831f5fbff275dde"
+  integrity sha512-Hk7hUOVi+XtBrH6JOnFcaWFGLEd5TtaTO19WpWDsfx17h/bITJRmKKeKKsHS+zt4P9LzunrBIi9I1camTOqfsw==
