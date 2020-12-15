@@ -1,0 +1,7 @@
+name = "proxy-config"
+type = "webpack"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+vars = { DOMAIN = "proxy-config.tbxark.workers.dev" }
