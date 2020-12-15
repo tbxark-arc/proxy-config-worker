@@ -2,7 +2,7 @@
 
 An online proxy configuration adaptation tool for Cloudflare worker.
 
-Demo: `https://proxy-config.tbxark.workers.dev`
+Demo: [https://proxy-config.tbxark.workers.dev](https://proxy-config.tbxark.workers.dev)
 
 Cloudflare worker Tutorials can be found [here](https://developers.cloudflare.com/workers/tutorials).
 
