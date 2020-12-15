@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@tbxark/proxy-config-worker": "1.0.1"
+  },
+  "scripts": {
+    "test": "wrangler build"
+  },
+  "author": "TBXarkyar",
+  "license": "ISC"
+}

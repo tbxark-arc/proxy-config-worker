@@ -1,9 +1,8 @@
 {
-  "private": false,
   "name": "@tbxark/proxy-config-worker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A template for kick starting a Cloudflare Workers project",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
