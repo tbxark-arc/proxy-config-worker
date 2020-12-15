@@ -1,13 +1,10 @@
 {
   "private": false,
-  "name": "proxy-config-worker",
-  "version": "1.0.0",
+  "name": "@tbxark/proxy-config-worker",
+  "version": "1.0.1",
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "src/index.js",
   "scripts": {
-    "dev": "wrangler dev",
-    "build": "wrangler build",
-    "publish": "wrangler publish",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "TBXark <tbxark@outlook.com>",
