@@ -27,7 +27,7 @@ Install via package.json:
 
 ## Example
 
-#### init project
+#### 1. init project
 
 ```bash
 npm i @cloudflare/wrangler -g
@@ -39,16 +39,16 @@ npm install @tbxark/proxy-config-worker@1.0.5
 
 ```
 
-#### edit configuration
+#### 2. edit configuration
 
-Fill in the configuration in wrangler.toml
+Fill in the configuration in `wrangler.toml`
 
 ```toml
 account_id = "your-account-id"
 vars = { DOMAIN = "your-worker-name.your-name.workers.dev" }
 ```
 
-#### add hook
+#### 3. add hook
 
 ```javascript
 import Application from '@tbxark/proxy-config-worker/index'
