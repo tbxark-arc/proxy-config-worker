@@ -35,7 +35,6 @@ Best = url-test, policy-path=https://##DOMAIN##/policy?port=##PORT##&token=##TOK
 Select = select, policy-path=https://##DOMAIN##/policy?port=##PORT##&token=##TOKEN##&style=##STYLE##, update-interval=86400
 Fallback = fallback, policy-path=https://##DOMAIN##/policy?port=##PORT##&token=##TOKEN##&style=##STYLE##, update-interval=86400, url=http://www.google.com/generate_204
 Balance = load-balance, policy-path=https://##DOMAIN##/policy?port=##PORT##&token=##TOKEN##&style=##STYLE##, update-interval=86400, persistent=1
-
 Block = select, REJECT-TINYGIF, REJECT, DIRECT, Final
 China = select, DIRECT, Proxy
 Final = select, DIRECT, Proxy
