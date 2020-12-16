@@ -17,7 +17,7 @@ Install from the command line:
 npm install @tbxark/proxy-config-worker@1.0.5
 ```
 
-Install via package.json:
+Install via `package.json`:
 
 ```json
 "@tbxark/proxy-config-worker": "1.0.5"
