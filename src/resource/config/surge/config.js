@@ -22,7 +22,7 @@ test-timeout = 30
 network-framework = false
 wifi-assist = false
 doh-server = https://223.5.5.5/dns-query
-]
+
 [Replica]
 hide-apple-request = 1
 hide-crashlytics-request = 1
