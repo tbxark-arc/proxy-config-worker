@@ -12,6 +12,23 @@ Further documentation for Wrangler can be found [here](https://developers.cloudf
 
 ## Installation
 
+Install from the command line:
+```bash
+npm install @tbxark/proxy-config-worker@1.0.5
+```
+
+Install via `package.json`:
+
+```json
+"@tbxark/proxy-config-worker": "1.0.5"
+```
+
+
+
+## Example
+
+#### 1. init project
+
 ```bash
 npm i @cloudflare/wrangler -g
 mkdir your-worker-name
@@ -22,17 +39,16 @@ npm install @tbxark/proxy-config-worker@1.0.5
 
 ```
 
-## Configuration
+#### 2. edit configuration
 
-Fill in the configuration in wrangler.toml
+Fill in the configuration in `wrangler.toml`
 
 ```toml
 account_id = "your-account-id"
 vars = { DOMAIN = "your-worker-name.your-name.workers.dev" }
 ```
 
-
-## Example
+#### 3. add hook
 
 ```javascript
 import Application from '@tbxark/proxy-config-worker/index'
