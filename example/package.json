@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@tbxark/proxy-config-worker": "1.0.5"
+    "@tbxark/proxy-config-worker": "file:../"
   },
   "scripts": {
     "test": "wrangler build"
