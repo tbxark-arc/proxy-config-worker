@@ -83,7 +83,7 @@ class SurgeStringify {
   }
 
   trojan(item) {
-    return `${item.name} = trojan, ${item.host}, ${item.port}, password=${item.password}, sni=${item.port}`
+    return `${item.name} = trojan, ${item.host}, ${item.port}, password=${item.password}, sni=${item.sni}`
   }
 
   snell(item) {

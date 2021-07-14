@@ -1,6 +1,6 @@
 {
   "name": "@tbxark/proxy-config-worker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "index.js",
   "scripts": {
