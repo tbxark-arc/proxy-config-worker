@@ -16,6 +16,6 @@
     "url": "https://github.com/TBXark/proxy-config-worker"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@tbxark"
+    "registry":"https://npm.pkg.github.com"
   }
 }
