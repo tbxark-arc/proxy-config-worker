@@ -14,13 +14,13 @@ Further documentation for Wrangler can be found [here](https://developers.cloudf
 
 Install from the command line:
 ```bash
-npm install @tbxark/proxy-config-worker@1.0.5
+npm install @tbxark/proxy-config-worker@1.0.7
 ```
 
 Install via `package.json`:
 
 ```json
-"@tbxark/proxy-config-worker": "1.0.5"
+"@tbxark/proxy-config-worker": "1.0.7"
 ```
 
 
@@ -35,7 +35,7 @@ mkdir your-worker-name
 cd your-worker-name
 wrangler init  your-worker-name --type webpack
 npm init
-npm install @tbxark/proxy-config-worker@1.0.5
+npm install @tbxark/proxy-config-worker@1.0.7
 
 ```
 
