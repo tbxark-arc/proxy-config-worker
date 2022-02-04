@@ -121,13 +121,6 @@ rule-providers:
     url: https://##DOMAIN##/git/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Scholar.yaml
     interval: 86400
 
-  IP-Blackhole:
-    type: http
-    behavior: ipcidr
-    path: ./RuleSet/Extra/IP-Blackhole.yaml
-    url: https://##DOMAIN##/git/DivineEngine/Profiles/master/Clash/RuleSet/Extra/IP-Blackhole.yaml
-    interval: 86400
-
   Telegram:
     type: http
     behavior: classical
@@ -176,7 +169,6 @@ rules:
 
   - RULE-SET,Streaming,Proxy
   - RULE-SET,Scholar,Proxy
-  - RULE-SET,IP-Blackhole,Proxy
   - RULE-SET,Telegram,Proxy
   - RULE-SET,Steam,Proxy
   - RULE-SET,Global,Proxy
