@@ -9,7 +9,7 @@ class Application {
   static async handleSchedule(scheduledTime) {
     return await HookSchedule.handle(scheduledTime)
   }
-  static async handleRequest(request) {
+  static  handleRequest(request) {
     const router = Router()
     router.get('/policy', async request => {
       let url = new URL(request.url)
@@ -28,12 +28,12 @@ class Application {
       return await Git.handleRequest(redirectReq)
     })
 
-    router.get('*', async request => {
+    router.all('*', async request => {
       return new Response(home_page_html, {
         headers: { 'content-type': 'text/html;charset=UTF-8' },
       })
     })
-    router.handle(request)
+    return router.handle(request)
   }
 }
 
