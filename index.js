@@ -3,35 +3,37 @@ import Git from './src/router/git'
 import Config from './src/router/config'
 import HookSchedule from './src/hook/schedule'
 import home_page_html from './src/resource/homepage'
+import { Router } from 'itty-router'
 
 class Application {
   static async handleSchedule(scheduledTime) {
     return await HookSchedule.handle(scheduledTime)
   }
   static async handleRequest(request) {
-    try {
+    const router = Router()
+    router.get('/policy', async request => {
       let url = new URL(request.url)
-      const action = url.pathname.split('/')[
-        url.pathname.startsWith('/') ? 1 : 0
-      ]
+      return await Policy.handleRequestWithParams(url.searchParams)
+    })
 
-      switch (action) {
-        case 'policy':
-          return await Policy.handleRequestWithParams(url.searchParams)
-        case 'config':
-          return await Config.handleRequestWithParams(url.searchParams)
-        case 'git':
-          url.pathname = url.pathname.replace(`/${action}`, '')
-          const redirectReq = new Request(url.href, request)
-          return await Git.handleRequest(redirectReq)
-        default:
-          return new Response(home_page_html, {
-            headers: { 'content-type': 'text/html;charset=UTF-8' },
-          })
-      }
-    } catch (e) {
-      return new Response(JSON.stringify({ error: e.message }), { status: 500 })
-    }
+    router.get('/config', async request => {
+      let url = new URL(request.url)
+      return await Config.handleRequestWithParams(url.searchParams)
+    })
+
+    router.get('/git/*', async request => {
+      let url = new URL(request.url)
+      url.pathname = url.pathname.replace(new RegExp('^/git'), '')
+      const redirectReq = new Request(url, request)
+      return await Git.handleRequest(redirectReq)
+    })
+
+    router.get('*', async request => {
+      return new Response(home_page_html, {
+        headers: { 'content-type': 'text/html;charset=UTF-8' },
+      })
+    })
+    router.handle(request)
   }
 }
 

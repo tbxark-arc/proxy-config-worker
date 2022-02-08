@@ -136,9 +136,7 @@ class FetcherFactory {
     switch (mode) {
       case Mode.Mode_Rocket:
       case Mode.Mode_Surge:
-        return [
-          new ShadowsocksFetcher(),
-          new TrojanFetcher()]
+        return [new ShadowsocksFetcher(), new TrojanFetcher()]
       case Mode.Mode_Clash:
         return [
           new ShadowsocksFetcher(),

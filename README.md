@@ -8,22 +8,19 @@ Cloudflare worker Tutorials can be found [here](https://developers.cloudflare.co
 
 Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
 
-
-
 ## Installation
 
 Install from the command line:
+
 ```bash
-npm install @tbxark/proxy-config-worker@1.0.7
+npm install @tbxark/proxy-config-worker@1.0.8
 ```
 
 Install via `package.json`:
 
 ```json
-"@tbxark/proxy-config-worker": "1.0.7"
+"@tbxark/proxy-config-worker": "1.0.8"
 ```
-
-
 
 ## Example
 
@@ -35,7 +32,7 @@ mkdir your-worker-name
 cd your-worker-name
 wrangler init  your-worker-name --type webpack
 npm init
-npm install @tbxark/proxy-config-worker@1.0.7
+npm install @tbxark/proxy-config-worker@1.0.8
 
 ```
 
@@ -65,5 +62,4 @@ addEventListener('fetch', event => {
 addEventListener('scheduled', event => {
   event.waitUntil(Application.handleSchedule(event.scheduledTime))
 })
-
 ```

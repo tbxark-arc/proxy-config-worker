@@ -1,6 +1,6 @@
 {
   "name": "@tbxark/proxy-config-worker",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "url": "https://github.com/TBXark/proxy-config-worker"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "itty-router": "^2.4.10"
   }
 }
