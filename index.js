@@ -9,7 +9,7 @@ class Application {
   static async handleSchedule(scheduledTime) {
     return await HookSchedule.handle(scheduledTime)
   }
-  static  handleRequest(request) {
+  static handleRequest(request) {
     const router = Router()
     router.get('/policy', async request => {
       let url = new URL(request.url)
@@ -33,7 +33,10 @@ class Application {
         headers: { 'content-type': 'text/html;charset=UTF-8' },
       })
     })
-    return router.handle(request)
+
+    return router.handle(request).catch(err => {
+      return new Response(err.message, { status: 500 })
+    })
   }
 }
 
