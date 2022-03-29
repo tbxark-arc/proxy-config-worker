@@ -1,3 +1,7 @@
+
+# ⚠️ **proxy-config-worker** is deprecated, please migrate to **[proxy-render(https://github.com/TBXark/proxy-render)](https://github.com/TBXark/proxy-render)**
+----
+
 # Proxy config worker
 
 An online proxy configuration adaptation tool for Cloudflare worker.
